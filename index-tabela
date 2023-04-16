@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela</title>
+  </head>
+
+  <body>
+
+
+
+    <table>
+      <caption>
+        Zakupy na wakacje
+      </caption>
+      <tr>
+        <th scope="col">Produkt</th>
+        <th scope="col">Sklep</th>
+        <th scope="col">Kupione?</th>
+        <th scope="col">Cena</th>
+      </tr>
+      <tr>
+        <th scope="row">Spodenki</th>
+        <td>H&M</td>
+        <td></td>
+        <td>99zł</td>
+      </tr>
+      <tr>
+        <th scope="row">Klapki na basen</th>
+        <td>Kubota</td>
+        <td></td>
+        <td>40 zł</td>
+      </tr>
+      <tr>
+        <th scope="row">Strój kąpielowy</th>
+        <td>Tezenis</td>
+        <td>✔</td>
+        <td>150 zł</td>
+      </tr>
+      <tr>
+        <th scope="row">Krem</th>
+        <td>Apteka</td>
+        <td>✔</td>
+        <td>35 zł</td>
+      </tr>
+      <tr>
+        <th scope="row">Okulary</th>
+        <td>Fielmann</td>
+        <td>✔</td>
+        <td>120 ł</td>
+      </tr>
+      <tr>
+        <th scope="row">Razem:</th>
+        <td>444 zł</td>
+      </tr>
+    </table>
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,66 @@
+/* komentarz */
+
+html {
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.picture {
+    border-radius: 20px;
+}
+
+.hidePic {
+    display: none;
+}
+
+.hideDownloadText {
+    display: none;
+}
+
+.button {
+    border-radius: 5px;
+    background-color: #a8a8a8de;
+}
+
+.important {
+    color: crimson;
+}
+
+.backgroundStyle {
+    border-radius: 20px;
+    background-color: rgb(221, 221, 221);
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+.space {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:visited {
+    color: blue;
+}
+
+.link:focus {
+    outline: 0.1px solid currentColor;
+}
+
+.link:hover {
+    color: red;
+    border-bottom: 1px solid;
+    outline: none;
+}

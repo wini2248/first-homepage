@@ -1,0 +1,75 @@
+.form__labelText {
+    width: 150px;
+    display: inline-block;
+    margin-right: 5px;
+    width: 100%;
+    max-width: 150px;
+}
+
+.form__labelTextBMI {
+    width: 150px;
+    display: inline-block;
+    margin-right: 5px;
+    width: 100%;
+    max-width: 150px;
+}
+
+.form__field {
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.form__field:invalid {
+    background-color: hsl(0, 53%, 92%);
+}
+
+.form__button {
+    width: 100%;
+    border: none;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.form__button:hover {
+    background-color: hsl(180, 100%, 30%);
+}
+
+.form__buton:active {
+    background-color: hsl(180, 100%, 35%);
+}
+
+.form {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.form__fieldSet {
+    border: 1px solid #b9b9b9;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.form__legend {
+    background-color: teal;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form__backgroundBox {
+    background-color: rgb(221, 221, 221);
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.bmi-text {
+    padding-bottom: 10px;
+}

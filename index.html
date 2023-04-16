@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <!-- KOMENTARZ -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie domowe moduł 2</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/table.css" rel="stylesheet" />
+    <link href="css/sections.css" rel="stylesheet" />
+
+    <script defer src="js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  </head>
+
+  <body>
+    <div class="form__backgroundBox">
+    <br>
+    <form class="center" action="https://google.com/search" target="_blank">
+      <input name="q">
+      <button>Szukaj w Google</button>
+    </form>
+
+    <form class="form">
+      <p>Pola wymagane oznaczone są *.</p>
+      <fieldset class="form__fieldSet">
+        </p>
+        <legend class="form__legend">Dane osobowe</legend>
+        <p>
+          <label>
+            <span class="form__labelText">
+               Imię*: 
+            </span>
+            <input class="form__field" name="firstName" minlength="3" required>
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Nazwisko*: 
+            </span>
+            <input class="form__field" name="lastName" required>
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Data urodzenia*:
+            </span>
+            <input class="form__field js-date" name="date" required>
+          </label>
+        </p>
+      </fieldset>
+      <p>
+        <button class="form__button">Wyślij!</button>
+      </p>
+    </form>
+    <hr>
+    <h3 class="center">Policz swoje BMI</h3>
+
+    <form class="form js-form">
+      <fieldset class="form__fieldSet">
+        <legend class="form__legend">Twoje Dane</legend>
+        <p>
+          <label>
+            <span class="form__labelTextBMI">Twój wzrost</span>
+            <input class="form__field js-height" type="number" min="1" step="any" required>
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelTextBMI">Twoja waga</span>
+            <input class="form__field js-weight" type="number" min="1" step="any" required>
+          </label>
+        </p>
+      </fieldset>
+      <p class="center">
+        <button class="form__button">Policz BMI !</button>
+      </p>
+    </form>
+    <p class="center bmi-text">Twoje BMI wynosi: <strong class="js-bmi">N/a</strong></p>
+    </div>
+
+    <script>
+      flatpickr(".js-date", {
+        mode: "range"
+      });
+    </script>
+
+    <div class="backgroundStyle">
+      <section>
+        <h1 class="header">Dariusz Tałach</h1>
+
+        <div class="center">
+          <p>
+            <button class="button">Ukryj zdjęcie</button>
+          </p>
+
+          <img
+            class="picture"
+            width="250"
+            src="images/ja.jpg"
+            alt="Dariusz Tałach"
+          />
+
+          <br />
+
+          <a
+            class="downloadText link"
+            rel="noopener noreferrer"
+            href="images/ja.jpg"
+            download="Darek.jpg"
+            >Pobierz zdjęcie</a
+          >
+        </div>
+      </section>
+
+      <section>
+        <div class="space center">
+          <div>
+            <div class="sectionNavi">
+              <h2><b>Nawigacja strony</b></h2>
+              <hr />
+
+              <ul class="section__list">
+                <li><a class="link" href="#oMnie" title="O mnie">O mnie</a></li>
+                <li>
+                  <a class="link" href="#sekcjaHTML" title="Sekcja HTML"
+                    >HTML</a
+                  >
+                </li>
+                <li>
+                  <a class="link" href="#sekcjaCSS" title="Sekcja CSS">CSS</a>
+                </li>
+                <li>
+                  <a class="link" href="#sekcjaJS" title="Sekcja JavaScript"
+                    >JavaScript</a
+                  >
+                </li>
+                <li>
+                  <a class="link" href="#tabela" title="Tabela">Tabela</a>
+                </li>
+                <li>
+                  <a class="link" href="#kontakt" title="Kontakt">Kontakt</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="aboutMeColor" id="oMnie">
+            <h2>O mnie</h2>
+            <hr />
+
+            <p>
+              <a
+                class="link"
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://www.youtube.com/watch?v=wTjLZwpmufw"
+                title="Dziwny jest ten świat"
+              >
+                ♪♪♪ Czesław Niemen - Dziwny jest ten świat ♪♪♪
+              </a>
+              <br />
+            </p>
+
+            <p>
+              Na prawdziwą wizytówkę jeszcze przyjdzie czas, a więc w skrócie.
+              <br />Nazywam się <em><b>Darek</b></em
+              >, mam <em><b>28</b></em> lat. <br /><strong class="important"
+                >Od lat</strong
+              >
+              interesuje się <i>programowaniem</i> i mam nadzieję, że z tym
+              kursem zdobędę upragniony cel :)
+            </p>
+            <p>A więc... rozwińmy skróty :D</p>
+          </div>
+
+          <div class="sectionHTML" id="sekcjaHTML">
+            <h2>HTML</h2>
+            <hr />
+            <p>
+              <strong>(HyperText Markup Language)</strong>
+              <br />jest to język opisowy określający strukturę strony sieci
+              Web. Jest standardowym językiem znaczników dla dokumentów
+              przeznaczonych do wyświetlania w przeglądarce internetowej:
+              umożliwia użytkownikowi tworzenie i struktury sekcji, akapitów,
+              nagłówków, linków do stron internetowych i aplikacji.
+            </p>
+          </div>
+
+          <div class="sectionCSS" id="sekcjaCSS">
+            <h3>CSS</h3>
+            <hr />
+            <p>
+              <strong>(Cascading Style Sheets)</strong>
+              <br />
+              To język programowania, który służy do opisu formy prezentacji
+              WWW. Język ten został stworzony głównie po to, aby odseparować
+              strukturę dokumentu od formy jego prezentacji.
+            </p>
+          </div>
+
+          <div class="sectionJS" id="sekcjaJS">
+            <h4>JavaScript</h4>
+            <hr />
+            <p>
+              JavaScript jest to
+              <strong>skryptowy język programowania wysokiego poziomu</strong>.
+              Razem z HTML i CSS JavaScript stanowi podstawowe narzędzie do
+              tworzenia stron internetowych, jednak posiada również szersze
+              zastosowania - jest używany w aplikacjach desktopowych i
+              dokumentach PDF oraz w aplikacjach webowych po stronie serwera.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <br />
+
+      <section>
+        <div class="containerTable" id="tabela">
+          <table class="table">
+            <caption class="caption">
+              Kontynenty - ich powierzchnia i najwyższe szczyty
+            </caption>
+            <thead>
+              <tr class="tableRow">
+                <th class="tableCell tableHeader" scope="col">
+                  Nazwa kontynentu
+                </th>
+                <th class="tableCell tableHeader" scope="col">
+                  Powierzchnia w mln km kwadratowych
+                </th>
+                <th class="tableCell tableHeader" scope="col">Nazwa szczytu</th>
+                <th class="tableCell tableHeader" scope="col">
+                  Wysokość w m. n.p.m.
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="tableRow">
+                <th class="tableCell tableHeader" scope="row">Afryka</th>
+                <td class="tableCell">30,3</td>
+                <td class="tableCell">Kibo</td>
+                <td class="tableCell">5859</td>
+              </tr>
+              <tr class="tableRow">
+                <th class="tableCell tableHeader" scope="row">Euroazja</th>
+                <td class="tableCell">55,1</td>
+                <td class="tableCell">Mount Everest</td>
+                <td class="tableCell">8850</td>
+              </tr>
+              <tr class="tableRow">
+                <th class="tableCell tableHeader" scope="row">Ameryka Płn</th>
+                <td class="tableCell">24,2</td>
+                <td class="tableCell">Denali</td>
+                <td class="tableCell">6194</td>
+              </tr>
+              <tr class="tableRow">
+                <th class="tableCell tableHeader" scope="row">Ameryka Płd</th>
+                <td class="tableCell">17,8</td>
+                <td class="tableCell">Aconcagua</td>
+                <td class="tableCell">6960</td>
+              </tr>
+              <tr class="tableRow">
+                <th class="tableCell tableHeader" scope="row">Australia</th>
+                <td class="tableCell">7,7</td>
+                <td class="tableCell">Puncak Jaya</td>
+                <td class="tableCell">5029</td>
+              </tr>
+              <tr class="tableRow">
+                <th class="tableCell tableHeader" scope="row">Antarktyda</th>
+                <td class="tableCell">13,2</td>
+                <td class="tableCell">Vinson</td>
+                <td class="tableCell">4897</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <footer class="footer" id="kontakt">
+            <p>Kontakt</p>
+            <hr />
+            <a href="mailto:dh@youcode.pl">d@youcode.pl</a>
+            <br />
+            <a href="tel:+48999999999">+48 999999999</a>
+          </footer>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
